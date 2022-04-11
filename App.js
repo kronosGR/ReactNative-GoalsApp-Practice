@@ -27,7 +27,7 @@ export default function App() {
         <FlatList
           data={courseGoals}
           renderItem={(itemData) => {
-            return <GoalItem />;
+            return <GoalItem itemData={itemData} />;
           }}
           alwaysBounceVertical='true'
           keyExtractor={(item, idex) => {
